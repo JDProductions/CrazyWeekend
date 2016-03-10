@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10084"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <customFonts key="customFonts">
@@ -142,20 +143,28 @@
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xaY-Hd-c5c">
-                                        <rect key="frame" x="170" y="213" width="87" height="57"/>
+                                    <button opaque="NO" contentMode="scaleAspectFit" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vtA-iE-ocx">
+                                        <rect key="frame" x="257" y="213" width="46" height="46"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="46" id="5WV-cJ-gWg"/>
+                                            <constraint firstAttribute="width" secondItem="vtA-iE-ocx" secondAttribute="height" multiplier="1:1" id="cL0-cV-Pbf"/>
+                                            <constraint firstAttribute="height" constant="46" id="dRN-og-SDq"/>
+                                        </constraints>
+                                        <state key="normal" image="facebook"/>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstItem="QD5-fG-mXT" firstAttribute="leading" secondItem="j4z-hA-c7s" secondAttribute="leading" constant="8" id="AA9-A7-FJG"/>
                                     <constraint firstItem="JKG-Az-rF4" firstAttribute="centerX" secondItem="j4z-hA-c7s" secondAttribute="centerX" id="BVj-mm-1bn"/>
+                                    <constraint firstItem="vtA-iE-ocx" firstAttribute="top" secondItem="JKG-Az-rF4" secondAttribute="bottom" constant="8" id="CW8-4X-Hd1"/>
                                     <constraint firstItem="JKG-Az-rF4" firstAttribute="top" secondItem="iyX-U0-lW3" secondAttribute="bottom" constant="50" id="CdO-Qm-Obc"/>
                                     <constraint firstItem="6qY-r1-OCt" firstAttribute="top" secondItem="QD5-fG-mXT" secondAttribute="bottom" constant="20" id="Kfj-fX-UrO"/>
                                     <constraint firstAttribute="height" constant="128" id="PR2-CR-cKb"/>
                                     <constraint firstItem="iyX-U0-lW3" firstAttribute="top" secondItem="6qY-r1-OCt" secondAttribute="bottom" constant="20" id="WYH-Pb-2Iq"/>
                                     <constraint firstItem="QD5-fG-mXT" firstAttribute="top" secondItem="j4z-hA-c7s" secondAttribute="top" constant="20" id="WlK-EB-LPT"/>
                                     <constraint firstAttribute="trailing" secondItem="6qY-r1-OCt" secondAttribute="trailing" constant="20" id="Zw8-4O-8el"/>
+                                    <constraint firstItem="vtA-iE-ocx" firstAttribute="centerX" secondItem="j4z-hA-c7s" secondAttribute="centerX" id="cLa-Y4-DoX"/>
                                     <constraint firstItem="iyX-U0-lW3" firstAttribute="trailing" secondItem="6qY-r1-OCt" secondAttribute="trailing" id="dJH-mU-33d"/>
                                     <constraint firstItem="6qY-r1-OCt" firstAttribute="leading" secondItem="QD5-fG-mXT" secondAttribute="leading" id="rYv-os-MJR"/>
                                     <constraint firstItem="iyX-U0-lW3" firstAttribute="leading" secondItem="6qY-r1-OCt" secondAttribute="leading" id="uw9-qY-Jkk"/>
@@ -189,6 +198,7 @@
     </scenes>
     <resources>
         <image name="Placeholder" width="80" height="80"/>
+        <image name="facebook" width="46" height="46"/>
         <image name="rsz_placeholder-party" width="80" height="80"/>
     </resources>
 </document>

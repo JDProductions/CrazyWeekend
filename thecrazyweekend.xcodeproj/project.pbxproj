@@ -22,6 +22,9 @@
 		1AD8E6791C91D0D700CD50B6 /* MaterialButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD8E6781C91D0D700CD50B6 /* MaterialButton.swift */; };
 		1AD8E67B1C91D13200CD50B6 /* MaterialImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD8E67A1C91D13200CD50B6 /* MaterialImageView.swift */; };
 		1AD8E67D1C91DDA100CD50B6 /* MaterialTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD8E67C1C91DDA100CD50B6 /* MaterialTextField.swift */; };
+		1AD8E6821C924E4900CD50B6 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AD8E67F1C924E4900CD50B6 /* Bolts.framework */; };
+		1AD8E6831C924E4900CD50B6 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AD8E6801C924E4900CD50B6 /* FBSDKCoreKit.framework */; };
+		1AD8E6841C924E4900CD50B6 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AD8E6811C924E4900CD50B6 /* FBSDKLoginKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +45,9 @@
 		1AD8E6781C91D0D700CD50B6 /* MaterialButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaterialButton.swift; sourceTree = "<group>"; };
 		1AD8E67A1C91D13200CD50B6 /* MaterialImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaterialImageView.swift; sourceTree = "<group>"; };
 		1AD8E67C1C91DDA100CD50B6 /* MaterialTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaterialTextField.swift; sourceTree = "<group>"; };
+		1AD8E67F1C924E4900CD50B6 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
+		1AD8E6801C924E4900CD50B6 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
+		1AD8E6811C924E4900CD50B6 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,6 +55,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1AD8E6821C924E4900CD50B6 /* Bolts.framework in Frameworks */,
+				1AD8E6831C924E4900CD50B6 /* FBSDKCoreKit.framework in Frameworks */,
+				1AD8E6841C924E4900CD50B6 /* FBSDKLoginKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +83,7 @@
 		1AD8E64F1C91B0E200CD50B6 /* thecrazyweekend */ = {
 			isa = PBXGroup;
 			children = (
+				1AD8E67E1C924E1A00CD50B6 /* Frameworks */,
 				1AD8E6721C91C43000CD50B6 /* Util */,
 				1AD8E6651C91B13E00CD50B6 /* Resources */,
 				1AD8E6641C91B13000CD50B6 /* Controller */,
@@ -132,6 +142,16 @@
 				1AD8E6731C91C44100CD50B6 /* Constants.swift */,
 			);
 			name = Util;
+			sourceTree = "<group>";
+		};
+		1AD8E67E1C924E1A00CD50B6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1AD8E67F1C924E4900CD50B6 /* Bolts.framework */,
+				1AD8E6801C924E4900CD50B6 /* FBSDKCoreKit.framework */,
+				1AD8E6811C924E4900CD50B6 /* FBSDKLoginKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -329,6 +349,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/thecrazyweekend",
+				);
 				INFOPLIST_FILE = thecrazyweekend/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jamesrdubois.thecrazyweekend;
@@ -340,6 +364,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/thecrazyweekend",
+				);
 				INFOPLIST_FILE = thecrazyweekend/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jamesrdubois.thecrazyweekend;
@@ -366,6 +394,7 @@
 				1AD8E6611C91B0E200CD50B6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

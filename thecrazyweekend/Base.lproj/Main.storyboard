@@ -129,7 +129,7 @@
                                         </constraints>
                                         <color key="textColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" name="NotoSans" family="Noto Sans" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES" secureTextEntry="YES"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JKG-Az-rF4" customClass="MaterialButton" customModule="thecrazyweekend" customModuleProvider="target">
                                         <rect key="frame" x="170" y="175" width="221" height="30"/>
@@ -142,6 +142,9 @@
                                         <state key="normal" title="Login / Register">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="attemptLogin:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ova-cK-jnt"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleAspectFit" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vtA-iE-ocx">
                                         <rect key="frame" x="257" y="213" width="46" height="46"/>
@@ -194,6 +197,8 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="emailField" destination="6qY-r1-OCt" id="kF9-Yg-30F"/>
+                        <outlet property="passwordField" destination="iyX-U0-lW3" id="z6L-Ab-UU4"/>
                         <segue destination="zc7-QX-igc" kind="show" identifier="loggedIn" id="Wdd-E5-y8H"/>
                     </connections>
                 </viewController>

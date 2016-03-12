@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1ABEC0981C93DDA30033EA6C /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ABEC0971C93DDA30033EA6C /* DataService.swift */; };
 		1AD8E6511C91B0E200CD50B6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD8E6501C91B0E200CD50B6 /* AppDelegate.swift */; };
 		1AD8E6531C91B0E200CD50B6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD8E6521C91B0E200CD50B6 /* ViewController.swift */; };
 		1AD8E6561C91B0E200CD50B6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1AD8E6541C91B0E200CD50B6 /* Main.storyboard */; };
@@ -25,9 +26,11 @@
 		1AD8E6821C924E4900CD50B6 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AD8E67F1C924E4900CD50B6 /* Bolts.framework */; };
 		1AD8E6831C924E4900CD50B6 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AD8E6801C924E4900CD50B6 /* FBSDKCoreKit.framework */; };
 		1AD8E6841C924E4900CD50B6 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AD8E6811C924E4900CD50B6 /* FBSDKLoginKit.framework */; };
+		D39A70BD6C09CB1B4E495CED /* Pods_thecrazyweekend.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 602A4F2419CC348A46BB21BD /* Pods_thecrazyweekend.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1ABEC0971C93DDA30033EA6C /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		1AD8E64D1C91B0E200CD50B6 /* thecrazyweekend.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = thecrazyweekend.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1AD8E6501C91B0E200CD50B6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1AD8E6521C91B0E200CD50B6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -48,6 +51,9 @@
 		1AD8E67F1C924E4900CD50B6 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
 		1AD8E6801C924E4900CD50B6 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
 		1AD8E6811C924E4900CD50B6 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
+		602A4F2419CC348A46BB21BD /* Pods_thecrazyweekend.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_thecrazyweekend.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6604C0B957C01D657F69F869 /* Pods-thecrazyweekend.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-thecrazyweekend.debug.xcconfig"; path = "Pods/Target Support Files/Pods-thecrazyweekend/Pods-thecrazyweekend.debug.xcconfig"; sourceTree = "<group>"; };
+		EEA769343F536C07FC7E3BEF /* Pods-thecrazyweekend.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-thecrazyweekend.release.xcconfig"; path = "Pods/Target Support Files/Pods-thecrazyweekend/Pods-thecrazyweekend.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,17 +64,28 @@
 				1AD8E6821C924E4900CD50B6 /* Bolts.framework in Frameworks */,
 				1AD8E6831C924E4900CD50B6 /* FBSDKCoreKit.framework in Frameworks */,
 				1AD8E6841C924E4900CD50B6 /* FBSDKLoginKit.framework in Frameworks */,
+				D39A70BD6C09CB1B4E495CED /* Pods_thecrazyweekend.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1ABEC0961C93DD8A0033EA6C /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				1ABEC0971C93DDA30033EA6C /* DataService.swift */,
+			);
+			name = Services;
+			sourceTree = "<group>";
+		};
 		1AD8E6441C91B0E200CD50B6 = {
 			isa = PBXGroup;
 			children = (
 				1AD8E64F1C91B0E200CD50B6 /* thecrazyweekend */,
 				1AD8E64E1C91B0E200CD50B6 /* Products */,
+				6DDE2179C5B1DAF72E18CBA0 /* Pods */,
+				AD21E64DE9A501747660C23A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -83,6 +100,7 @@
 		1AD8E64F1C91B0E200CD50B6 /* thecrazyweekend */ = {
 			isa = PBXGroup;
 			children = (
+				1ABEC0961C93DD8A0033EA6C /* Services */,
 				1AD8E67E1C924E1A00CD50B6 /* Frameworks */,
 				1AD8E6721C91C43000CD50B6 /* Util */,
 				1AD8E6651C91B13E00CD50B6 /* Resources */,
@@ -154,6 +172,23 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		6DDE2179C5B1DAF72E18CBA0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6604C0B957C01D657F69F869 /* Pods-thecrazyweekend.debug.xcconfig */,
+				EEA769343F536C07FC7E3BEF /* Pods-thecrazyweekend.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		AD21E64DE9A501747660C23A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				602A4F2419CC348A46BB21BD /* Pods_thecrazyweekend.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -161,9 +196,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1AD8E65F1C91B0E200CD50B6 /* Build configuration list for PBXNativeTarget "thecrazyweekend" */;
 			buildPhases = (
+				BC0C800E325AFA260267F52D /* Check Pods Manifest.lock */,
 				1AD8E6491C91B0E200CD50B6 /* Sources */,
 				1AD8E64A1C91B0E200CD50B6 /* Frameworks */,
 				1AD8E64B1C91B0E200CD50B6 /* Resources */,
+				180C223E4C8BA2C012D7D3F7 /* Embed Pods Frameworks */,
+				98A1CED7AEF157B5CA09D03F /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -186,6 +224,7 @@
 				TargetAttributes = {
 					1AD8E64C1C91B0E200CD50B6 = {
 						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = SF6DFE8CVA;
 					};
 				};
 			};
@@ -225,6 +264,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		180C223E4C8BA2C012D7D3F7 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-thecrazyweekend/Pods-thecrazyweekend-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		98A1CED7AEF157B5CA09D03F /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-thecrazyweekend/Pods-thecrazyweekend-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BC0C800E325AFA260267F52D /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		1AD8E6491C91B0E200CD50B6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -237,6 +324,7 @@
 				1AD8E6791C91D0D700CD50B6 /* MaterialButton.swift in Sources */,
 				1AD8E67B1C91D13200CD50B6 /* MaterialImageView.swift in Sources */,
 				1AD8E67D1C91DDA100CD50B6 /* MaterialTextField.swift in Sources */,
+				1ABEC0981C93DDA30033EA6C /* DataService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -347,31 +435,45 @@
 		};
 		1AD8E6601C91B0E200CD50B6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6604C0B957C01D657F69F869 /* Pods-thecrazyweekend.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/thecrazyweekend",
 				);
 				INFOPLIST_FILE = thecrazyweekend/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jamesrdubois.thecrazyweekend;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
 		1AD8E6611C91B0E200CD50B6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EEA769343F536C07FC7E3BEF /* Pods-thecrazyweekend.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/thecrazyweekend",
 				);
 				INFOPLIST_FILE = thecrazyweekend/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jamesrdubois.thecrazyweekend;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
